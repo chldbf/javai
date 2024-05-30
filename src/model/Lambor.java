@@ -1,8 +1,7 @@
-package javai;
+package model;
 
-public class Porche implements Car {
-	
-	private int speed;
+public class Lambor implements Car {
+	public int speed;
 	
 	public int getSpeed() {
 		return speed;
@@ -12,19 +11,16 @@ public class Porche implements Car {
 		this.speed = speed;
 	}
 
-	@Override
-	public int speedUp(int km) {
+	public int speedup(int km) {
 		this.speed = this.speed + km;
 		return this.speed;
 	}
 
-	@Override
 	public boolean stop() {
-		// TODO Auto-generated method stub
+		this.speed = 0;
 		return false;
 	}
 
-	@Override
 	public boolean isStart() {
 		// TODO Auto-generated method stub
 		return false;

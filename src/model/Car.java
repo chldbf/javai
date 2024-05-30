@@ -1,11 +1,11 @@
-package javai;
+package model;
 
 public interface Car {
 
-	int speedUp(int km);
+	int speedup(int km);
 	
 	boolean stop();
-	
+
 	boolean isStart();
 	
 	int getSpeed();

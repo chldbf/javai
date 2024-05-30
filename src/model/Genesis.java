@@ -1,8 +1,8 @@
-package javai;
+package model;
 
-public class Lambor implements Car {
-	private int speed;
-
+public class Genesis  implements Car {
+	public int speed;
+	
 	public int getSpeed() {
 		return speed;
 	}
@@ -11,17 +11,18 @@ public class Lambor implements Car {
 		this.speed = speed;
 	}
 
-	public int speedUp(int km) {
+	public int speedup(int km) {
 		this.speed = this.speed + km;
 		return this.speed;
 	}
 
 	public boolean stop() {
 		this.speed = 0;
-		return true;
+		return false;
 	}
 
 	public boolean isStart() {
-		return this.speed > 0;
+		// TODO Auto-generated method stub
+		return false;
 	}
 }
